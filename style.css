@@ -1,0 +1,96 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100vh; /* Full height of the viewport */
+  display: grid;
+  place-items: center; /* Center both horizontally and vertically */
+  background-color: #1b71f1; /* Light background for contrast */
+}
+
+/* Container for the to-do list */
+.container {
+  background-color: #ffffffb0; /* Background color for the box */
+  padding: 300px; /* Padding inside the box */
+  border-radius: 75px; /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.404); /* Subtle shadow for depth */
+  width: 800px; /* Width of the container */
+  text-align: center; /* Center the text inside the container */
+}
+
+/* Title styling */
+h1 {
+  margin-bottom: 20px; /* Space between title and input */
+  font-size: 24px; /* Title size */
+  color: #333; /* Dark gray for title */
+}
+
+/* Input field styling */
+#task-input {
+  padding: 10px; /* Padding inside input */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 50px; /* Rounded corners */
+  width: 37%; /* Adjust width to fit within the container */
+  font-size: 16px; /* Font size */
+  transition: border-color 0.3s; /* Transition for border color */
+}
+
+#task-input:focus {
+  border-color: #0adf03; /* Darker border color on focus */
+  outline: none; /* Remove outline */
+}
+
+/* Button styling */
+#add-task-btn {
+  padding: 10px 15px; /* Padding inside button */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor */
+  background-color: #007bff; /* Button color */
+  color: #ffffff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+#add-task-btn:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+/* List container styling */
+#list-container {
+  margin-top: 20px; /* Space above the list */
+  padding: 0; /* Remove default padding */
+  list-style: none; /* Remove default list styling */
+}
+
+/* List item styling */
+#list-container li {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center vertically */
+  padding: 10px; /* Padding inside list item */
+  margin: 5px 0; /* Space between list items */
+  background-color: #f8f9fa; /* Light gray background for items */
+  border-radius: 5px; /* Rounded corners */
+  transition: background-color 0.3s; /* Transition for background color */
+}
+
+#list-container li:hover {
+  background-color: #e2e6ea; /* Darker gray on hover */
+}
+
+/* Icon styling */
+#list-container li i {
+  margin-right: 10px; /* Space between icon and text */
+  color: #28a745; /* Green color for the icon */
+  font-size: 20px; /* Icon size */
+}
+
+/* Delete button styling */
+.delete-btn {
+  background: none; /* No background */
+  border: none; /* Remove border */
+  color: red; /* Red color for delete button */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 18px; /* Font size */
+}
